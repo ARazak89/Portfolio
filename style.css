@@ -1,0 +1,196 @@
+body {
+    font-family: 'Inter', sans-serif;
+    max-width: 1440px;
+    overflow-x: hidden;
+    margin: auto;
+}
+p{
+    color: #1E488F;
+    font-size: 24px;
+}
+h1{
+    font-weight: bold;
+    color: #172B4D;
+
+}
+section{
+    overflow-x:hidden ;
+    text-align: center;
+}
+
+#entete ul {
+    justify-content: center;
+    border: none !important;
+}
+a{
+    text-decoration: none;
+    color: #1E488F;
+    font-size: 20px;
+}
+
+#entete ul li {
+    border: none !important;
+}
+
+#wellcome {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#hey {
+    margin-top: 15%;
+}
+
+.blue {
+    font-size: 3rem;
+    color: #1E488F;
+}
+
+.red {
+    font-size: 3rem;
+    color: #FF6B00;
+}
+
+#wellcome p {
+    font-size: 1.5rem;
+
+}
+
+#reseaux img {
+    margin: 1rem;
+    width: 2rem;
+}
+
+#boot {
+    border: 1px solid black;
+    background: #FF6B00;
+    width: 30rem;
+    height: 5rem;
+    border-radius: 0 20px 0 20px;
+    color:#fff;
+    font-size: 3rem;
+}
+#boot:hover{
+    background: #FE984E;
+}
+#boot:active{
+    background:#E35F00;
+}
+
+#next {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
+#recentWork .card, #aboutMe .card{
+    border-radius: 15px;
+    width: 28rem;
+    margin-right: 2rem !important;
+
+}
+
+#recentWork a, #aboutMe a{
+    text-decoration: none;
+    color: #FE984E;
+    font-size: 16px;
+}
+.card-img-top{
+    height: 20rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+.card-link{
+    padding: 0.5rem;
+    background: #EBF0EE;
+    border-radius: 10px;
+}
+.card-link:hover{
+    background: #E2EDFF;
+}
+#boot2{
+    margin-top: 2rem;
+    background: #36B37E;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+#boot2:hover{
+    background: #C5E9DA;
+}
+
+#aboutMe .card img{
+    height: 200px;
+}
+.card-link1{
+    padding: 0.75rem;
+    background: #fff;
+    border-radius: 10px;
+}
+.card-link1:hover{
+    background: #E2EDFF;
+}
+.btn-bout{
+    padding: 1rem;
+    width: 12rem;
+    border-radius:10px;
+    border: none;
+    background: #FF6B00;
+}
+.btn-bout:hover{
+    background:#FE984E;
+}
+
+textarea:focus, input:focus{
+   
+    outline: none !important;
+    border: 2px solid #FF6B00 !important;
+    border-color: #FF6B00;
+    box-shadow: 0 0 2px #FF6B00 !important;
+}
+#aboutMe, #recentWork{
+    margin-top: 7rem !important;
+    margin-bottom: 10rem !important;
+}
+footer{
+    text-align: center;
+}
+
+.trait{
+    width: 7rem;
+    background: #000;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 38%;
+    margin-top: -10%;
+}
+@media screen and (max-width:435px){
+
+    .tofme{
+        width: 500px;
+        height: 250px;
+    }
+
+    #menu-haut:target{
+        display: flex !important;
+    }
+    .card-link1{
+        font-size: 16px !important;
+    }
+    #recentWork .card, #aboutMe .card{
+        border-radius: 15px;
+        width: 25rem !important;
+        margin: 1rem !important;
+    
+    }
+    #getIn{
+        margin-left: 50%;
+    }
+    .card-body{
+        padding-left:0;
+        padding-right: 0;
+    }
+    .tofme{
+        height: 30rem !important;
+    }
+}
