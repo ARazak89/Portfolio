@@ -4,17 +4,20 @@ body {
     overflow-x: hidden;
     margin: auto;
 }
-p{
-    color: #1E488F;
+
+p {
+    color: #172B4D;
     font-size: 24px;
 }
-h1{
+
+h1 {
     font-weight: bold;
     color: #172B4D;
 
 }
-section{
-    overflow-x:hidden ;
+
+section {
+    overflow-x: hidden;
     text-align: center;
 }
 
@@ -22,9 +25,10 @@ section{
     justify-content: center;
     border: none !important;
 }
-a{
+
+a {
     text-decoration: none;
-    color: #1E488F;
+    color: #172B4D;
     font-size: 20px;
 }
 
@@ -41,13 +45,19 @@ a{
     margin-top: 15%;
 }
 
+#hey p {
+    margin-top: 8%;
+}
+
 .blue {
     font-size: 3rem;
-    color: #1E488F;
+    font-weight: bold;
+    color: #172B4D;
 }
 
 .red {
     font-size: 3rem;
+    font-weight: bold;
     color: #FF6B00;
 }
 
@@ -61,20 +71,30 @@ a{
     width: 2rem;
 }
 
+#hey #reseaux {
+    margin-top: 3rem;
+}
+
+#downCv {
+    margin-top: 10rem !important;
+}
+
 #boot {
     border: 1px solid black;
     background: #FF6B00;
     width: 30rem;
     height: 5rem;
     border-radius: 0 20px 0 20px;
-    color:#fff;
+    color: #fff;
     font-size: 3rem;
 }
-#boot:hover{
+
+#boot:hover {
     background: #FE984E;
 }
-#boot:active{
-    background:#E35F00;
+
+#boot:active {
+    background: #E35F00;
 }
 
 #next {
@@ -82,32 +102,44 @@ a{
     top: 90%;
     left: 50%;
 }
-#recentWork .card, #aboutMe .card{
+
+#recentWork .card,
+#aboutMe .card {
     border-radius: 15px;
     width: 28rem;
     margin-right: 2rem !important;
-
 }
 
-#recentWork a, #aboutMe a{
+#cardhaut,
+#cardbas,
+#cardAbout {
+    padding-left: 1rem;
+}
+
+#recentWork a,
+#aboutMe a {
     text-decoration: none;
     color: #FE984E;
     font-size: 16px;
 }
-.card-img-top{
+
+.card-img-top {
     height: 20rem;
     border-radius: 15px;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
 }
-.card-link{
+
+.card-link {
     padding: 0.5rem;
     background: #EBF0EE;
     border-radius: 10px;
 }
-.card-link:hover{
+
+.card-link:hover {
     background: #E2EDFF;
 }
-#boot2{
+
+#boot2 {
     margin-top: 2rem;
     background: #36B37E;
     padding: 1rem;
@@ -115,82 +147,338 @@ a{
     color: #fff;
     font-size: 1.5rem;
 }
-#boot2:hover{
+
+#boot2:hover {
     background: #C5E9DA;
 }
 
-#aboutMe .card img{
+#aboutMe .card {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+#aboutMe .card img {
     height: 200px;
 }
-.card-link1{
+
+.card-link1 {
     padding: 0.75rem;
     background: #fff;
     border-radius: 10px;
 }
-.card-link1:hover{
+
+.card-link1:hover {
     background: #E2EDFF;
 }
-.btn-bout{
+
+.btn-bout {
     padding: 1rem;
     width: 12rem;
-    border-radius:10px;
+    border-radius: 10px;
     border: none;
     background: #FF6B00;
 }
-.btn-bout:hover{
-    background:#FE984E;
+
+.btn-bout:hover {
+    background: #FE984E;
 }
 
-textarea:focus, input:focus{
-   
+textarea:focus,
+input:focus {
+
     outline: none !important;
     border: 2px solid #FF6B00 !important;
     border-color: #FF6B00;
     box-shadow: 0 0 2px #FF6B00 !important;
 }
-#aboutMe, #recentWork{
-    margin-top: 7rem !important;
-    margin-bottom: 10rem !important;
+
+#aboutMe,
+#recentWork {
+    /* margin-top: 7rem !important; */
+    margin-bottom: 5rem !important;
 }
-footer{
+
+#getIn {
+    color: #fff;
+    font-size: 20px;
+}
+
+footer {
     text-align: center;
 }
 
-.trait{
+.trait {
     width: 7rem;
     background: #000;
     height: 10px;
     border-radius: 5px;
-    margin-left: 38%;
+    margin-left: 35%;
     margin-top: -10%;
 }
-@media screen and (max-width:435px){
 
-    .tofme{
+@media screen and (max-width:1024px) {
+
+    #recentWork .card,
+    #aboutMe .card {
+        border-radius: 15px;
+        width: 20rem !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 2rem !important;
+
+    }
+
+    #cardhaut,
+    #cardbas,
+    #cardAbout {
+        padding: 0 !important;
+    }
+
+    .card-link {
+        font-size: 12px !important;
+        margin-left: 2px !important;
+    }
+
+    .card-link1 {
+        font-size: 10px !important;
+        margin-left: 0px !important;
+    }
+
+    #next {
+        top: 105%;
+        left: 50%;
+    }
+
+    #contact #text {
+        margin-top: 5rem !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .tofme {
+        width: 600px;
+        height: 250px;
+    }
+
+    #menu-haut:target {
+        display: flex !important;
+    }
+
+    .card-link1 {
+        font-size: 16px !important;
+    }
+
+    #recentWork .card,
+    #aboutMe .card {
+        border-radius: 15px;
+        width: 40rem !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 2rem !important;
+
+    }
+
+    .card-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .tofme {
+        height: 30rem !important;
+    }
+
+    #aboutMe,
+    #recentWork {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    #aboutMe .card img {
+        height: 100px;
+    }
+
+    .card-title {
+        margin-bottom: 1rem;
+    }
+
+    .trait {
+        margin-top: -3rem !important;
+        margin-left: 42% !important;
+    }
+}
+
+@media screen and (max-width:435px) {
+
+    .tofme {
         width: 500px;
         height: 250px;
     }
 
-    #menu-haut:target{
+    .blue {
+        flex-direction: column;
+    }
+
+    .red {
+        margin-top: -2rem !important;
+    }
+
+    #menu-haut:target {
         display: flex !important;
     }
-    .card-link1{
+
+    .card-link1 {
         font-size: 16px !important;
     }
-    #recentWork .card, #aboutMe .card{
+
+    #recentWork .card,
+    #aboutMe .card {
         border-radius: 15px;
-        width: 25rem !important;
-        margin: 1rem !important;
-    
+        width: 23rem !important;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
     }
-    #getIn{
+
+    #cardhaut .card,
+    #cardbas .card {
+        border-left: #fff;
+        border-right: #fff;
+    }
+
+    #getIn {
         margin-left: 50%;
     }
-    .card-body{
-        padding-left:0;
+
+    .card-body {
+        padding-left: 0;
         padding-right: 0;
     }
-    .tofme{
+
+    .tofme {
         height: 30rem !important;
+    }
+
+    #aboutMe,
+    #recentWork {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    #aboutMe .card img {
+        height: 100px;
+    }
+
+    .card-title {
+        margin-bottom: 1rem;
+    }
+
+    .card-link {
+        font-size: 12px !important;
+        margin-left: 5px !important;
+    }
+
+    .card-link1 {
+        font-size: 12px !important;
+        margin-left: 0px !important;
+    }
+
+    .trait {
+        margin-top: -3rem !important;
+        margin-left: 38% !important;
+    }
+}
+
+@media screen and (max-width:375px) {
+    p {
+        font-size: 20px !important;
+    }
+
+    .blue,
+    .red {
+        font-size: 35px !important;
+    }
+
+    #reseaux {
+        margin-top: 0rem;
+    }
+
+    #reseaux img {
+        margin: 0.5rem;
+        width: 1.5rem
+    }
+
+    .tofme {
+        width: 430px;
+        height: 200px;
+    }
+
+    #recentWork .card,
+    #aboutMe .card {
+        border-radius: 15px;
+        width: 20rem !important;
+        margin: 1rem 2rem !important;
+
+    }
+
+    .card-link {
+        font-size: 12px !important;
+        margin-left: 5px !important;
+    }
+
+    .card-link1 {
+        font-size: 12px !important;
+        margin-left: 0px !important;
+    }
+
+    #cardhaut,
+    #cardbas,
+    #cardAbout {
+        padding-left: 0rem !important;
+    }
+
+    #menu-haut:target {
+        display: flex !important;
+    }
+
+    #getIn {
+        margin-left: 50%;
+    }
+
+    .card-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .tofme {
+        height: 30rem !important;
+    }
+
+    #aboutMe,
+    #recentWork {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    #aboutMe .card img {
+        height: 100px;
+    }
+
+    .card-title {
+        margin-bottom: 1rem;
+    }
+
+    #cardhaut .card,
+    #cardbas .card {
+        border-left: #fff;
+        border-right: #fff;
+    }
+
+    #contact #text {
+
+        margin-top: 0 !important;
     }
 }
