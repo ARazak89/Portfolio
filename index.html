@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -17,8 +18,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
         integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+
+    <title>Doc Final</title>
 </head>
 
 <body>
@@ -31,19 +33,21 @@
             </ul>
             <div class="d-lg-none" id="Men" style="margin-left: 90%;">
                 <a href="#menu-haut">
-                <i class="bi bi-list" style="font-size: 2rem;"></i>
+                    <i class="bi bi-list" style="font-size: 2rem;"></i>
                 </a>
             </div>
         </div>
     </header>
+
+    <!-- Section1  -->
     <section style="height: 100vh;">
         <div class="container-fluid d-lg-flex d-md-block mt-5" id="wellcome">
             <div class="col-lg-6 col-md-11 m-auto" id="hey">
 
-                <div class="blue d-flex">
-                     <div>Hey there.</div> 
-                     <div>I’m Alex..</div>  
-                    </div>
+                <div class="blue d-md-flex d-" style="justify-content: center;">
+                    <div>Hey there.</div>
+                    <div>I’m Alex..</div>
+                </div>
                 <br>
                 <div class="red"> I’m a software developer</div>
 
@@ -52,16 +56,49 @@
                     If you like what you see and have a project you need coded, don’t hesitate to contact me.
                 </p>
 
-                <div class="container" id="reseaux">
-                    <img src="Icons/github.svg" alt="github">
-                    <img src="Icons/Linkedin icon.svg" alt="Linkedin">
-                    <img src="Icons/angellist.svg" alt="angellist">
-                    <img src="Icons/twitter.svg" alt="twitter">
-                    <img src="Icons/medium.svg" alt="">
+                <div class="container m-auto" id="reseaux">
+
+                    <ul class="list-group list-group-horizontal" id="" style="justify-content: center; margin-top: 7rem;">
+                        <li class="list-group-item">
+                            <a href="#">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#aboutMe">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#aboutMe">
+                                <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54751 19.6541C11.2442 19.6541 14.1667 16.2531 14.1667 11.8653C14.1667 10.2111 13.8925 8.71739 11.9817 8.26862C12.4467 7.01732 13.7883 3.39769 13.7883 2.23811C13.7883 1.21691 13.1633 0.361143 12.0492 0.361143C10.2733 0.361143 8.68167 5.41633 8.18334 6.62178C7.7975 5.5277 5.99084 0 4.39834 0C3.16084 0 2.58001 0.8787 2.58001 1.98424C2.58001 3.33955 3.94084 6.85189 4.43417 8.20311C4.18417 8.11467 3.91334 8.03769 3.6375 8.03769C2.70584 8.03769 1.715 9.15469 1.715 10.0571C1.715 10.3986 1.91 10.8785 2.03334 11.1971C0.565005 11.5812 4.77463e-06 12.5254 4.77463e-06 13.9495C-0.00416189 16.7207 2.71917 19.6541 6.54751 19.6541ZM10.5725 4.14619C10.7325 3.67367 11.4125 1.67796 12.0492 1.67796C12.3917 1.67796 12.4833 2.01945 12.4833 2.29215C12.4833 3.02509 10.9475 7.07546 10.6083 7.97299L9.255 7.74288L10.5725 4.14619ZM3.83 1.85485V1.85403C3.83 1.39708 4.40751 0.0999083 5.67251 3.66221L7.05 7.51276C6.42917 7.46281 5.94751 7.39729 5.64167 7.56681C5.20751 6.46127 3.83 2.97186 3.83 1.85485ZM3.73834 9.36598L3.73917 9.36679C4.905 9.36679 6.41001 12.9979 6.41001 13.4892C6.41001 13.685 6.215 13.9265 5.98834 13.9265C5.15584 13.9265 2.92667 10.9743 2.92667 10.1759C2.93001 9.88026 3.43167 9.36598 3.73834 9.36598ZM2.39834 12.3714C2.85167 12.3714 4.55917 14.6865 4.55917 15.1778C4.55917 15.3662 4.2525 15.4964 4.09417 15.4964C3.45334 15.4964 3.2025 14.901 2.06084 13.5236C0.878338 14.6636 2.87667 16.8591 4.38167 16.8591C5.42001 16.8591 6.09667 15.9304 5.89417 15.2466C6.04167 15.2466 6.22417 15.2581 6.36 15.2237C6.40417 16.2637 6.7225 17.5036 8.02001 17.592C8.02001 17.5576 8.10001 17.3193 8.10001 17.3079C8.10001 16.6396 7.67834 16.0565 7.67834 15.3768C7.67834 14.2901 8.54167 13.2386 9.41751 12.6245C9.73584 12.3943 10.1225 12.2518 10.4958 12.1216C10.8825 11.98 11.2925 11.8145 11.5858 11.5304C11.5417 11.1004 11.3592 10.7205 10.9133 10.7205C9.81084 10.7205 6.11334 10.8744 6.11334 9.19646C6.11334 8.93932 6.11751 8.69364 6.80667 8.69364C8.09251 8.69364 11.3567 9.00074 12.3117 9.81065C13.0317 10.4289 13.2792 14.1558 11.0775 16.5168L11.075 16.5176C9.91667 17.746 8.43584 18.3831 6.70834 18.3831C4.34417 18.3831 2.47667 17.1318 1.5775 14.9936C0.896672 13.3279 1.72917 12.3714 2.39834 12.3714ZM7.14917 11.6802C7.53667 11.7998 7.93417 11.835 8.33251 11.9112C8.03751 12.1184 7.77584 12.3722 7.52417 12.6441C7.41251 12.3182 7.27667 11.9996 7.14917 11.6802Z"
+                                        fill="#505F79" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#aboutMe">
+                                <i class="bi bi-twitter"></i>                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#aboutMe">
+                                <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.4042 2.81372L20 1.29766V0.96582H14.4717L10.5317 10.7043L6.04917 0.96582H0.2525V1.29766L2.11667 3.52623C2.29833 3.69091 2.39333 3.93172 2.36917 4.17419V12.932C2.42667 13.2473 2.32333 13.5717 2.1 13.801L0 16.3283V16.656H5.95417V16.3241L3.85417 13.801C3.62667 13.5709 3.51917 13.2523 3.565 12.932V5.35674L8.79167 16.6601H9.39917L13.8933 5.35674V14.3612C13.8933 14.5987 13.8933 14.6475 13.7367 14.8031L12.12 16.3564V16.6891H19.9633V16.3572L18.405 14.842C18.2683 14.7394 18.1975 14.5673 18.2267 14.4001V3.25562C18.1975 3.08763 18.2675 2.9155 18.4042 2.81372Z"
+                                        fill="#505F79" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class=" mt-5 d-none d-lg-block" id="downCv">
                     <a href="">
-                        <button class="btn" type="button" id="boot">Download CV <i class="bi bi-arrow-down"></i></button>
+                        <button class="btn" type="button" id="boot">Download CV <i
+                                class="bi bi-arrow-down"></i></button>
                     </a>
                 </div>
             </div>
@@ -75,148 +112,268 @@
             </div>
         </div>
     </section>
+    <!-- Section 1 -->
 
+    <!-- Section2 -->
     <section class="mx-auto" id="recentWork">
         <h1 class="mt-5 mb-5">My Recent Works</h1>
       <div class="trait d-lg-none"></div>
-        <div class="d-lg-flex d-md-block m-auto" id="cardhaut">
-            <div class="card card col-4 m-auto">
+        <div class="row row-cols-1 row-cols-lg-3" id="cardhaut">
+            <div class="col">
+            <div class="card">
                 <img class="card-img-top" src="Images/Img6.webp" alt="impact">
-                <div class="card-body">
+                <div class="card-body" >
                     <h2 class="card-title my-4">Impact</h2>
-                    <a href="#" class="card-link">Ruby on rails</a>
-                    <a href="#" class="card-link">CSS</a>
-                    <a href="#" class="card-link">Java Script</a>
-                    <a href="#" class="card-link">HTML</a>
+                    <ul class="list-group list-group-horizontal">
+                        <li>
+                            <a href="#" class="card-link">Ruby on rails</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">CSS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">Java Script</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">HTML</a>
+                        </li>
+                    </ul>
                     <br>
                     <a href="">
                         <button class="btn" type="button" id="boot2">See Project</button>
                     </a>
                 </div>
             </div>
-            <div class="card card col-lg-4  m-auto">
+            </div>
+            <div class="col">
+            <div class="card">
                 <img class="card-img-top" src="Images/Img2.webp" alt="e-solution">
                 <div class="card-body">
                     <h2 class="card-title my-4">E-Solution</h2>
-                    <a href="#recentWork" class="card-link">Ruby on rails</a>
-                    <a href="#recentWork" class="card-link">CSS</a>
-                    <a href="#recentWork" class="card-link">Java Script</a>
-                    <a href="#recentWork" class="card-link">HTML</a>
+                    <ul class="list-group list-group-horizontal">
+                        <li>
+                            <a href="#" class="card-link">Ruby on rails</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">CSS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">Java Script</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">HTML</a>
+                        </li>
+                    </ul>
                     <br>
                     <a href="">
                         <button class="btn" type="button" id="boot2">See Project</button>
                     </a>
                 </div>
             </div>
-            <div class="card card col-lg-4 col-md-10 m-auto">
+           </div>
+           <div class="col">
+            <div class="card">
                 <img class="card-img-top" src="Images/Img3.jpg" alt="design-hub">
                 <div class="card-body">
                     <h2 class="card-title my-4">Design-HUB</h2>
-                    <a href="#recentWork" class="card-link">Ruby on rails</a>
-                    <a href="#recentWork" class="card-link">CSS</a>
-                    <a href="#recentWork" class="card-link">Java Script</a>
-                    <a href="#recentWork" class="card-link">HTML</a>
+                    <ul class="list-group list-group-horizontal">
+                        <li>
+                            <a href="#" class="card-link">Ruby on rails</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">CSS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">Java Script</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">HTML</a>
+                        </li>
+                    </ul>
                     <br>
                     <a href="">
                         <button class="btn" type="button" id="boot2">See Project</button>
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="d-lg-flex d-md-block mt-5" id="cardbas">
-            <div class="card col-4 me-2">
+            </div>
+            <div class="col">
+            <div class="card">
                 <img class="card-img-top" src="Images/img1.webp" alt="freyamoore">
                 <div class="card-body">
                     <h2 class="card-title my-4">Portfolio <br> Freya Moore</h2>
-                    <a href="#recentWork" class="card-link">Ruby on rails</a>
-                    <a href="#recentWork" class="card-link">CSS</a>
-                    <a href="#recentWork" class="card-link">Java Script</a>
-                    <a href="#recentWork" class="card-link">HTML</a>
+                    <ul class="list-group list-group-horizontal">
+                        <li>
+                            <a href="#" class="card-link">Ruby on rails</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">CSS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">Java Script</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">HTML</a>
+                        </li>
+                    </ul>
                     <br>
                     <a href="">
                         <button class="btn" type="button" id="boot2">See Project</button>
                     </a>
                 </div>
             </div>
-            <div class="card card col-4 me-2">
+            </div>
+            <div class="col">
+            <div class="card">
                 <img class="card-img-top" src="Images/Img8.jpeg" alt="sas">
                 <div class="card-body">
                     <h2 class="card-title my-4">Sass <br> Digital Creator</h2>
-                    <a href="#recentWork" class="card-link">Ruby on rails</a>
-                    <a href="#recentWork" class="card-link">CSS</a>
-                    <a href="#recentWork" class="card-link">Java Script</a>
-                    <a href="#recentWork" class="card-link">HTML</a>
+                    <ul class="list-group list-group-horizontal">
+                        <li>
+                            <a href="#" class="card-link">Ruby on rails</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">CSS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">Java Script</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">HTML</a>
+                        </li>
+                    </ul>
                     <br>
                     <a href="">
                         <button class="btn" type="button" id="boot2">See Project</button>
                     </a>
                 </div>
             </div>
-            <div class="card card col-4 me-2">
+            </div>
+            <div class="col">
+            <div class="card">
                 <img class="card-img-top" src="Images/Img5.jpg" alt="allan-jhonson">
                 <div class="card-body">
                     <h2 class="card-title my-4">ALLAN JOHNSON</h2> <br> <br>
-                    <a href="#recentWork" class="card-link">Ruby on rails</a>
-                    <a href="#recentWork" class="card-link">CSS</a>
-                    <a href="#recentWork" class="card-link">Java Script</a>
-                    <a href="#recentWork" class="card-link">HTML</a>
+                    <ul class="list-group list-group-horizontal">
+                        <li>
+                            <a href="#" class="card-link">Ruby on rails</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">CSS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">Java Script</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link">HTML</a>
+                        </li>
+                    </ul>
                     <br>
                     <a href="">
                         <button class="btn" type="button" id="boot2">See Project</button>
                     </a>
                 </div>
             </div>
+            </div>
         </div>
     </section>
+    <!-- Section2 -->
 
+    <!-- Section 3 -->
     <section class="mt-5" id="aboutMe">
         <h1>About me</h1>
         <br><br>
-        <div class="trait d-lg-none"></div>
+        <div class="trait d-md-none"></div>
         <p class="px-4">I can help you build a product , feature or website Look through some of my work and <br>
             experience! If you like what you see and have a project you need coded, <br>
             don’t hesitate to contact me.
         </p>
-        <div class=" d-lg-flex d-md-block mt-5" id="cardAbout">
-            <div class="card card col-4 me-2" style="background: #EBF0EE;">
+        <div class="row row-cols-1 row-cols-lg-3" id="cardAbout">
+            <div class="col">
+            <div class="card" style="background: #EBF0EE; height: 458px;">
                 <img src="Icons/icon-languages.svg" alt="languages">
                 <div class="card-body">
                     <h2 class="card-title mb-lg-5">Languages</h2>
-                    <a href="#" class="card-link1">Ruby on rails</a>
-                    <a href="#" class="card-link1">CSS</a>
-                    <a href="#" class="card-link1">Java Script</a>
-                    <a href="#" class="card-link1">HTML</a>
+                    <br><br>
+                    <ul class="list-group list-group-horizontal flex-wrap" style="justify-content: center;">
+                        <li>
+                            <a href="#" class="card-link1">Ruby on rails</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link1">CSS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link1">Java Script</a>
+                        </li>
+                        <br><br><br>
+                        <li>
+                            <a href="#" class="card-link1">HTML</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="card card col-4 me-2" style="background: #EBF0EE;">
+            </div>
+            <div class="col">
+            <div class="card" style="background: #EBF0EE;height: 458px; ;">
                 <img src="Icons/icon-frameworks.svg" alt="frameworks">
                 <div class="card-body">
                     <h2 class="card-title mb-lg-5">Frameworks</h2>
-                    <a href="#" class="card-link1">React.js</a>
-                    <a href="#" class="card-link1">Ruby on rails</a>
-                    <a href="#" class="card-link1">R spect</a> <br> <br> <br>
-                    <a href="#" class="card-link1">Capybara</a>
+                    <br>
+                    <ul class="list-group list-group-horizontal flex-wrap"style="justify-content: center;">
+                        <li>
+                            <a href="#" class="card-link1 mb-5">Database Management</a>   
+                        </li>
+                        <br><br><br>
+                        <li>
+                            <a href="#" class="card-link1">Ruby on rails</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link1">R spect</a> <br> <br> <br>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link1">Capybara</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="card card col-4 me-2" style="background: #EBF0EE;">
+            </div>
+            <div class="col">
+            <div class="card" style="background: #EBF0EE; height: 458px;">
                 <img src="Icons/icon-skills.svg" alt="skills">
                 <div class="card-body">
                     <h2 class="card-title mb-lg-5">Skills</h2>
-                    <a href="#" class="card-link1 mb-5">Database Management</a>
-                    <a href="#" class="card-link1 mb-5">Version Control</a> <br> <br> <br>
-                    <a href="#" class="card-link1">CLI</a>
-                    <a href="#" class="card-link1">Web Development</a>
-                    <a href="#" class="card-link1">API Design</a>
+                    <br>
+                    <ul class="list-group list-group-horizontal flex-wrap"style="justify-content: center;">
+                        <li>
+                            <a href="#" class="card-link1 mb-5">Database Management</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link1 mb-5">Version Control</a> 
+                        </li>
+                        <br><br><br>
+                        <li>
+                            <a href="#" class="card-link1">CLI</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link1">Web Development</a>
+                        </li>
+                        <li>
+                            <a href="#" class="card-link1">API Design</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
             </div>
         </div>
     </section>
+    <!-- Section 3 -->
 
+    <!-- Section4 -->
     <section class="mt-5 mb-5 d-lg-flex" id="contact">
         <div class="container col-lg-5 mt-5" id="text">
             <h1>Contact Me</h1>
             <br><br>
-            <div class="trait d-lg-none"></div>
+            <div class="trait d-md-none"></div>
             <p>I'm always interested in hearing <br>
                 about new projects, so if you'd like <br>
                 to chat please get in touch.
@@ -256,31 +413,55 @@
             </form>
         </div>
     </section>
+    <!-- Section4 -->
 
-
+    <!-- Footer -->
     <footer class="col-lg-12 col-md-12 m-auto">
 
         <h2 class="d-none d-lg-inline"> hassane.abdelrazak@gmail.com</h2>
         <hr>
         <h2 class="d-lg-none"style="font-size:130%;"> hassane.abdelrazak@gmail.com</h2>
         <div class="container" id="reseaux">
-            <img src="Icons/github.svg" alt="github">
-            <img src="Icons/Linkedin icon.svg" alt="Linkedin">
-            <img src="Icons/angellist.svg" alt="angellist">
-            <img src="Icons/twitter.svg" alt="twitter">
-            <img src="Icons/medium.svg" alt="">
+            <ul class="list-group list-group-horizontal" id="" style="justify-content: center;">
+                <li class="list-group-item">
+                    <a href="#">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#aboutMe">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#aboutMe">
+                        <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.54751 19.6541C11.2442 19.6541 14.1667 16.2531 14.1667 11.8653C14.1667 10.2111 13.8925 8.71739 11.9817 8.26862C12.4467 7.01732 13.7883 3.39769 13.7883 2.23811C13.7883 1.21691 13.1633 0.361143 12.0492 0.361143C10.2733 0.361143 8.68167 5.41633 8.18334 6.62178C7.7975 5.5277 5.99084 0 4.39834 0C3.16084 0 2.58001 0.8787 2.58001 1.98424C2.58001 3.33955 3.94084 6.85189 4.43417 8.20311C4.18417 8.11467 3.91334 8.03769 3.6375 8.03769C2.70584 8.03769 1.715 9.15469 1.715 10.0571C1.715 10.3986 1.91 10.8785 2.03334 11.1971C0.565005 11.5812 4.77463e-06 12.5254 4.77463e-06 13.9495C-0.00416189 16.7207 2.71917 19.6541 6.54751 19.6541ZM10.5725 4.14619C10.7325 3.67367 11.4125 1.67796 12.0492 1.67796C12.3917 1.67796 12.4833 2.01945 12.4833 2.29215C12.4833 3.02509 10.9475 7.07546 10.6083 7.97299L9.255 7.74288L10.5725 4.14619ZM3.83 1.85485V1.85403C3.83 1.39708 4.40751 0.0999083 5.67251 3.66221L7.05 7.51276C6.42917 7.46281 5.94751 7.39729 5.64167 7.56681C5.20751 6.46127 3.83 2.97186 3.83 1.85485ZM3.73834 9.36598L3.73917 9.36679C4.905 9.36679 6.41001 12.9979 6.41001 13.4892C6.41001 13.685 6.215 13.9265 5.98834 13.9265C5.15584 13.9265 2.92667 10.9743 2.92667 10.1759C2.93001 9.88026 3.43167 9.36598 3.73834 9.36598ZM2.39834 12.3714C2.85167 12.3714 4.55917 14.6865 4.55917 15.1778C4.55917 15.3662 4.2525 15.4964 4.09417 15.4964C3.45334 15.4964 3.2025 14.901 2.06084 13.5236C0.878338 14.6636 2.87667 16.8591 4.38167 16.8591C5.42001 16.8591 6.09667 15.9304 5.89417 15.2466C6.04167 15.2466 6.22417 15.2581 6.36 15.2237C6.40417 16.2637 6.7225 17.5036 8.02001 17.592C8.02001 17.5576 8.10001 17.3193 8.10001 17.3079C8.10001 16.6396 7.67834 16.0565 7.67834 15.3768C7.67834 14.2901 8.54167 13.2386 9.41751 12.6245C9.73584 12.3943 10.1225 12.2518 10.4958 12.1216C10.8825 11.98 11.2925 11.8145 11.5858 11.5304C11.5417 11.1004 11.3592 10.7205 10.9133 10.7205C9.81084 10.7205 6.11334 10.8744 6.11334 9.19646C6.11334 8.93932 6.11751 8.69364 6.80667 8.69364C8.09251 8.69364 11.3567 9.00074 12.3117 9.81065C13.0317 10.4289 13.2792 14.1558 11.0775 16.5168L11.075 16.5176C9.91667 17.746 8.43584 18.3831 6.70834 18.3831C4.34417 18.3831 2.47667 17.1318 1.5775 14.9936C0.896672 13.3279 1.72917 12.3714 2.39834 12.3714ZM7.14917 11.6802C7.53667 11.7998 7.93417 11.835 8.33251 11.9112C8.03751 12.1184 7.77584 12.3722 7.52417 12.6441C7.41251 12.3182 7.27667 11.9996 7.14917 11.6802Z"
+                                fill="#505F79" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#aboutMe">
+                        <i class="bi bi-twitter"></i>        
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#aboutMe">
+                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.4042 2.81372L20 1.29766V0.96582H14.4717L10.5317 10.7043L6.04917 0.96582H0.2525V1.29766L2.11667 3.52623C2.29833 3.69091 2.39333 3.93172 2.36917 4.17419V12.932C2.42667 13.2473 2.32333 13.5717 2.1 13.801L0 16.3283V16.656H5.95417V16.3241L3.85417 13.801C3.62667 13.5709 3.51917 13.2523 3.565 12.932V5.35674L8.79167 16.6601H9.39917L13.8933 5.35674V14.3612C13.8933 14.5987 13.8933 14.6475 13.7367 14.8031L12.12 16.3564V16.6891H19.9633V16.3572L18.405 14.842C18.2683 14.7394 18.1975 14.5673 18.2267 14.4001V3.25562C18.1975 3.08763 18.2675 2.9155 18.4042 2.81372Z"
+                                fill="#505F79" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
-
     </footer>
-
-    <!-- script bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-
+    <!-- Footer -->
 </body>
 
 </html>
